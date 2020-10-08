@@ -52,9 +52,129 @@
 <!-- Work Row -->
 <div class="w3-row-padding w3-padding-64 w3-theme-l5" id="work">
 
-<div class="w3-fill">
-<h2>Week Three</h2>
-<p>Updates for this week have not been added. Please check back later.</p>
+<div class="w3-row-padding w3-threequarter">
+<h1>Week Three</h1>
+<h2>Additive Manufacturing</h2>
+<p>This week was all about learning how to use Fusion360 and the Prusa MK3 3D printers.</p>
+<p>The first step this week was to get trained on the 3D printers. Getting trained first helped me make sure that my CAD work was compatable and ready to use once it was finalized for printing. For simplicity - and I'd like to think I have some narrative authority here - I'm going to go over the steps for printing at the end.</p>
+<p>The main software we are using with the 3D printers is Fusion360. This cloud based CAD system is great for making simplistic designs, like the ones we are working with this week, upto some of the more complet and constrained designs we will see in later weeks. </p>
+<h3>1. Experimenting with Fusion360</h3>
+<p>After downloading Fusion360 and starting a new file, I made the the origin and x-, y-, and z-planes visable. Then I started experimenting with Fusion.</p>
+<img src="Images3/Testing1.png" alt="Testing1" style="width:90%">
+<p>I then started a new sketch in the x,y-plane and was staring at a blank canvas as such.</p>
+<img src="Images3/Testing2.png" alt="testing2" style="width:90%">
+<p>I then made a rectangle of random size with one vertex at the origin.</p>
+<img src="Images3/Testing3.png" alt="testing3" style="width:90%">
+<p>I followed this up with a circle of eaqually random size centered at the origin.</p>
+<img src="Images3/Testing4.png" alt="testing4" style="width:90%">
+<p>Using the coincidence tool, I joined the upper left corner of the rectangle to the top point of my circle.</p>
+<img src="Images3/Testing5.png" alt="testing5" style="width:90%">
+<p>I drew a line coincident with the top side of the rectangle to the bottow side (also coincident).</p>
+<img src="Images3/Testing6.png" alt="testing6" style="width:90%">
+<p>I then set an arbitrary length to that line using the dimension tool</p>
+<img src="Images3/Testing7.png" alt="testing7" style="width:90%">
+<p>At this point I experimented with what parts of my design were still unconstrained.</p>
+<img src="Images3/Testing8.png" alt="testing8" style="width:90%">
+<p>In the same manner as the last, I made another line from the left side of the rectangle to the right.</p>
+<img src="Images3/Testing9.png" alt="testing9" style="width:90%">
+<p>I gave this line the same arbitrary dimension as the last. This fully constrained my simple design.</p>
+<img src="Images3/Testing10.png" alt="testing10" style="width:90%">
+
+<h3>2. Making the Radioactive Warning Symbol</h3>
+<p>Following a guided video tutorial, I made my first real sketch in Fusion360</p>
+<P>Like my previous design, I start by making my oginin and planes visible. Then I start a new sketch on the x,y-plane. I then start the sketch by making a circle centered at the origin with a diameter of 50 mm.</P>
+<img src="Images3/radio1.png" alt="radio1" style="width:90%">
+<p>I then extrude that circle 2 mm upwards.</p>
+<img src="Images3/radio2.png" alt="radio2" style="width:90%">
+<p>After starting a new sketch on the supper surface of the disk, I offset two circles, one -2 mm and the other -4 mm from the outer edge of the surface.</p>
+<img src="Images3/radio3.png" alt="radio3" style="width:90%">
+<p>I then Make a hexagon centered at the origin and set its center to vertex length to 6 mm. I also make a circle centered at the origin with a diameter of 8 mm.</p>
+<img src="Images3/radio4.png" alt="radio4" style="width:90%">
+<p>I then draw a line from each vertex of the hexagon to the inner most circle. Following that, a line is drawn between each line and the ones next to it on the circle side. Finally, using the equal constraint, each of those connecting lines is made an equal length. Though it sounds complex. the result is quite simple as seen below.</p>
+<img src="Images3/radio5.png" alt="radio5" style="width:90%">
+<p>I then made the following lines into constructions.</p>
+<img src="Images3/radio6.png" alt="radio6" style="width:90%">
+<p>Next I made another circle centered at the origin.</p>
+<img src="Images3/radio7.png" alt="radio7" style="width:90%">
+<p>To constrain it, I then made it coincident with the vertices of the hexagon</p>
+<img src="Images3/radio8.png" alt="radio8" style="width:90%">
+<p>From there, the following sections were extruded 1.5 mm.</p>
+<img src="Images3/radio9.png" alt="radio9" style="width:90%">
+<p>Color as you wish.</p>
+<img src="Images3/radio10.png" alt="radio10" style="width:90%">
+
+<h3>3. Making the Biological Symbol</h3>
+<p>I repeat the first two steps from the pervious symbol until I have started a new sketch on the surface of the raised disk.</p>
+<img src="Images3/bio5.png" alt="bio1" style="width:90%">
+<p>I make a triangle centered at the origin and circumscribed within the base. I make the base of the triangle parallel to the x-axis. Then draw lines from each vertex to the origin, then make them all constructions</p>
+<img src="Images3/bio6.png" alt="bio2" style="width:90%">
+<p>Now I create 3 circles, each being coincident with one vertex and sharing a center point with the respective line. This will gives 3 overlapping, fully defined circles.</p>
+<img src="Images3/bio7.png" alt="bio3" style="width:90%">
+<p>Now break the internal lines and make them into constructions. This will gives a solid central design</p>
+<img src="Images3/bio8.png" alt="bio4" style="width:90%">
+<p>Then make another smaller triangle of 10 mm in the center, 180 degrees offset from the original. Make the top parallel to the x axis. Make this a construction. Then once again make lines going from the midpoint of the triangle to vertex of the larger triangle. Make them constructions</p>
+<img src="Images3/bio9.png" alt="bio5" style="width:90%">
+<p>Now make smaller circles by the method used earlier. At this point, Fusion 360 might view some spots as having to many constrains, leading to some odd glitches where no internal spaces are defined. An easy work around is to make the last circle coincident with the center point of the line of the internal triangle. This has at least fixed my very strange error. From talking with others it seems to be caused by how a computer handles Fusion360 (aka my laptop is crap)</p>
+<img src="Images3/bio10.png" alt="bio6" style="width:90%">
+<p>Now make an offset of -1 mm in each of these smaller circles.</p>
+<img src="Images3/bio11.png" alt="bio7" style="width:90%">
+<p>Make a another circle centered at the origin with a diameter of 25 mm</p>
+<img src="Images3/bio12.png" alt="bio8" style="width:90%">
+<p>Now create an offset of -3 mm. </p>
+<img src="Images3/bio13.png" alt="bio9" style="width:90%">
+<p>Now break and make into constructions the following areas.</p>
+<img src="Images3/bio14.png" alt="bio10" style="width:90%">
+<p>Now extrude by 1.5 mm. The center designs could also be done here, but with some of the errors from the number of constraints, I decided to make those in another sketch and extrude them in a negative direction. </p>
+<img src="Images3/bio15.png" alt="bio11" style="width:90%">
+<img src="Images3/bio16.png" alt="bio12" style="width:90%">
+<p>Start the last sketch on the surface of the extruded area.</p>
+<img src="Images3/bio17.png" alt="bio13" style="width:90%">
+<p>Make another triangle pointing down with the sides stretching just beyond the plane the are on. Make the upper edge parallel to the x-axis. Then define the length of one side.</p>
+<img src="Images3/bio18.png" alt="bio14" style="width:90%">
+<p>Now make a circle centered at the origin with a diameter of 6 mm and another triangle in the same orientation of 1 mm.</p>
+<img src="Images3/bio19.png" alt="bio15" style="width:90%">
+<p>Now makes some rectangle, each sharing a side of the inner most triangle and going until they are coincident with the out triangle.</p>
+<img src="Images3/bio20.png" alt="bio16" style="width:90%">
+<p>Now make some breaks and constructions as seen below</p>
+<img src="Images3/bio21.png" alt="bio17" style="width:90%">
+<p>Now extrude for -1.5 mm. The negative is very important here.</p>
+<img src="Images3/bio22.png" alt="bio18" style="width:90%">
+<img src="Images3/bio23.png" alt="bio19" style="width:90%">
+<p>Color as you wish.</p>
+<img src="Images3/bio24.png" alt="bio20" style="width:90%">
+
+<h3>4. Printing My Symbol</h3>
+<p>The first step to printing from a CAD file (such as this one) is to save it as an STL file.</p>
+<p>To do this, right click on the project name in the upper left field and go to "save as STL".</p>
+<img src="Images3/save1.png" alt="save1" style="width:90%">
+<p>Then keep the basic settings the same, and click "ok".</p>
+<img src="Images3/save2.png" alt="save2" style="width:90%">
+<p>Finally, name the file and save it wherever you want.</p>
+<img src="Images3/save3.png" alt="save3" style="width:90%">
+<p>Then, using what ever method you like, whether it be email, flash drive, or sd card, transfer this STL file to a computer with PrusaSlicer.</p>
+<img src="Images3/save4.png" alt="save4" style="width:90%">
+<p>Now on that computer, open PrusaSlicer and access your file (again, it should be one one of the above platforms or one of your choice).</p>
+<img src="Images3/howto1.png" alt="howto1" style="width:90%">
+<p>Drag the STL file onto the work plane in PrusaSlicer, and it should open the file.</p>
+<img src="Images3/howto2.png" alt="howto2" style="width:90%">
+<p>In the lower right, click "slice now". From here, your print should load. Slide the scroll bar in the middle right to make sure that your print has rendered correctly, as seen below.</p>
+<img src="Images3/howto3.png" alt="howto3" style="width:90%">
+<p>Now click "Export G-code" in the same spot where you clicked "slice now" in the lower right. Save the file onto an SD card. This time you must save it on an SD card. </p>
+<img src="Images3/howto4.png" alt="howto4" style="width:90%">
+<p>Insert the SD card into the Prusa MK3. Normally, at this point, you would warm up the printer and insert the fillament, but the printer was in use before me, so all of that was already done before I started printing. Select the file you want to print and it will start to print. We have to stay by the printer for the first 30 minutes to make sure that the print has not failed. Fortunately, this print was less than the 30 minute period.</p>
+<img src="Images3/3d%20printing.JPG" alt="printing" style="width:90%">
+<p>The final result looks something like this.</p>
+<img src="Images3/final.jpg" alt="final" style="width:90%">
+
+<h3>Design Files</h3>
+<p>My Design files for week 3 can be found <a
+href="designfiles/Week3Files.zip">here</a>.</p>
+
+
+
+
+
+
 </div>
 
 </div>
