@@ -52,10 +52,88 @@
 <!-- Work Row -->
 <div class="w3-row-padding w3-padding-64 w3-theme-l5" id="work">
 
-<div class="w3-fill">
-<h2>Week Four</h2>
-<p>Updates for this week have not been added. Please check back later.</p>
+<div class="w3-row-padding w3-threequarter">
+<h1>Week Four</h1>
+<h2>Fusion 360 Meets Plants</h2>
+<p>This week we continued to work with the 3D printers and Fusion360. We had to print a planter using vase mode and design (but not print!) a watering can.</p>
+<h3>1-2. Designing and Printing a Planter</h3>
+<p>It can be hard to separate the process of learning how to print in vase mode and the printing of the vase, so for this week I have decided to combine the two criteria we are being graded on (while I don't have your approval, I humbly ask for forgiveness instead of permission. Please be merciful.</p>
+<p>Before starting this weeks assignment, I watched this video which showed the basic steps for printing in vase mode.</p>
+<img src="Images4/video1.png" alt="video1" style="width:90%">
+<p>After watching the video, I had the critical piece of information: vase mode hollows out your design. With this in mind, I started designing a solid planter.</p>
+<p>Like always, I start by creating a document in Focus360, making the origin and planes visible, and creating a new sketch on the x,y-plane.</p>
+<img src="Images4/vase1.png" alt="vase1" style="width:90%">
+<p>I then made a circle centered at the origin with a diameter of 50 mm.</p>
+<img src="Images4/vase2.png" alt="vase2" style="width:90%">
+<p>From there, I made a line of length 26 mm and set it virtical. I also made a circle of diameter 6 mm centered at the out end-point of that line.</p>
+<img src="Images4/vase3.png" alt="vase3" style="width:90%">
+<p>At that point, I used the create circular pattern tool to copy the circle just enough times to cover the entire circumference of the circle.</p>
+<img src="Images4/vase4.png" alt="vase4" style="width:90%">
+<p>Then I extruded the center to the desired hight, ready for export.</p>
+<img src="Images4/vase5.png" alt="vase5" style="width:90%">
+<p>LIke last week, it was saved as an STL file and opened in PrusaSlicer (sorry, the pictures are of an older object).</p>
+<img src="Images3/save1.png" alt="save1" style="width:90%">
+<img src="Images3/howto2.png" alt="howto2" style="width:90%">
+<p>Once the vase is loaded, tab over to "print settings"</p>
+<img src="Images4/printvase1.png" alt="vaseprint1" style="width:90%">
+<p>Select "Spiral Vase" and then click ok when the warning pops up.</p>
+<img src="Images4/Screen%20Shot%202020-09-26%20at%203.50.16%20PM.png" alt="screenshot1" style="width:90%">
+<img src="Images4/Screen%20Shot%202020-09-26%20at%203.50.33%20PM.png" alt="screenshot2" style="width:90%">
+<p>Then go back to the main tab and click "slice now". Then check to make sure there are no errors in the rendoring of our print by using the scroll bar to the middle right. (again, sorry about the old picture, but why fix what ain't broken) This time, we should see a few layers of base, and then a very very thin wall to our planter.</p>
+<img src="Images3/howto3.png" alt="vase1" style="width:90%">
+<p>Again, like last week, export the code to a SD card and put that in one of the Prusa MK3s and begin the print.</p>
+<img src="Images3/3d%20printing.JPG" alt="printing" style="width:90%">
+<p>The final product will look something like this. Note, we used "spire vase" because it achives much thinner walls (also seen below) and a much faster print compaird to the shelling technique that will be displayed in the watering can.</p>
+<img src="Images4/finalvase1.JPG" alt="finalvase1" style="width:90%">
+<img src="Images4/finalvase2.JPG" alt="finalvase2" style="width:90%">
+
+<h3>3. Designing a Watering Can</h3>
+<p>The second part of this week's assignment was designing, but not printing, a watering can to take case of our future plants. </p>
+<p>As always, start by making a document, making the origin and planes visible, and create a sketch on the x,y-plane.</p>
+<p>Then make an ellipse with major axis of 100 mm and minor axis of 60 mm.</p>
+<img src="Images4/watering1.png" alt="water1" style="width:90%">
+<p>Next, extrude the the ellipse by 75 mm.</p>
+<img src="Images4/watering2.png" alt="water2" style="width:90%">
+<p>Now, on the top face of our object, make a dot on one vertex of the major axis. Then create a line fron the center point to the line and contrain it with a set dimension (in this case 50 mm). This will fully define all parts of our sketch.</p>
+<p>Then create a tangent plane using the dot we just made using the "plane tanget to face at point" tool. </p>
+<img src="Images4/watering3.png" alt="water3" style="width:90%">
+<p>Then, after create a new sketch on this plane, project the point we just made onto our new plane. Then make a line down to the x-axis. Then create a circle centered on that line with a diameter of 25 mm. Then set its height from the top using a simple line and dimention technique. In this case, the dimention is 15 mm.</p>
+<p>Lastly, creat a line of unimportant lenth from the center of the circle out to the side (perpendicular to main virtical line).</p>
+<img src="Images4/watering4.png" alt="water4" style="width:90%">
+<p>Then create a plane at an angle using that side line as your rotation point. An angle of 110 degrees will work</p>
+<img src="Images4/watering5.png" alt="water5" style="width:90%">
+<p>Using that plane, create an offset plane -60 mm away.</p>
+<img src="Images4/watering6.png" alt="water6" style="width:90%">
+<p>On this plane, project the center point of the circle we made on the side of our extruded ellipse.Then make another circle of equal diameter (25 mm) using this point as our center.</p>
+<img src="Images4/watering7.png" alt="water7" style="width:90%">
+<p>Extrude this circle using the settings below.</p>
+<img src="Images4/watering8.png" alt="water8" style="width:90%">
+<img src="Images4/watering9.png" alt="water9" style="width:90%">
+<p>Now create another offset plane (-20 mm). Project the center of our new circle onto our new plane, and make another circle centered at that point. This time give it a diameter of 35 mm.</p>
+<img src="Images4/watering10.png" alt="water10" style="width:90%">
+Now use the loft command (settings below) to connect the two planes, circle to circle.
+<img src="Images4/watering11.png" alt="water11" style="width:90%">
+<p>At this point, the shape of our watering can is nearly complete. Use the shell tool to hollow out our watering can with a wall thickness of 2 mm.</p>
+<img src="Images4/watering12.png" alt="water12" style="width:90%">
+<p>From here, start a new sketch on the surface of the newest circle. I chose to create a hexagonal deisgn, consisting of three circle which have been copied 6 times each using the "circular pattern tool" and a center circle.</p>
+<img src="Images4/watering13.png" alt="water13" style="width:90%">
+<p>Now extrude each of those circles -2 mm using the cut setting.</p>
+<img src="Images4/watering14.png" alt="water14" style="width:90%">
+<p>Lastly, create a 2 mm fillet on the brim of the watering can using the fillet tool.</p>
+<img src="Images4/watering15.png" alt="water15" style="width:90%">
+<p>This gives us our final product, a perfect little watering can.</p>
+<img src="Images4/watering16.png" alt="water16" style="width:90%">
+
+<h3>4. Design Files</h3>
+<p>My Design files for week 3 can be found <a
+href="designfiles/Week4files.zip">here</a>.</p>
+
+
+
+
+
 </div>
+
 
 </div>
 
